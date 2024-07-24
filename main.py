@@ -2,6 +2,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+import re
+import pprint
 
 def start_game(driver):
     new_game_button = driver.find_element(By.CLASS_NAME, "battle-home-button")
@@ -16,15 +18,22 @@ def start_game(driver):
     start_button.click()
 
 def scan_site(driver):
-    try:
-        WebDriverWait(driver, timeout=5).until(lambda success: success.find_element(By.CLASS_NAME, "battle-board-movie-number"))
-    except:
-        print("Exception occurred finding the movie number.")
-        return True
-    
-    movie_number = driver.find_element(By.CLASS_NAME, "battle-board-movie-number").text
-    movie_number -= 1
-    class_name = "battle-board-movie-" + movie_number
+    driver.implicitly_wait(3.0)
+    print("scanning...")
+    # try:
+    #     WebDriverWait(driver, timeout=5).until(lambda success: success.find_element(By.CLASS_NAME, "battle-board-movie-number"))
+    # except:
+    #     print("Exception occurred finding the movie number.")
+    #     pass
+    # else:
+    #     movie_number_str = driver.find_element(By.CLASS_NAME, "battle-board-movie-number").text
+    #     print(movie_number_str)
+    #     movie_numbers = [int(s) for s in re.findall(r'\b\d+\b', movie_number_str)]
+    #     print(movie_numbers)
+
+    movie_number = [int(s) for s in movie_number_str.split() if s.isdigit()]
+    movie_number[0] -= 1
+    class_name = "battle-movie-" + movie_number
 
     movie_title = driver.find_element(By.CLASS_NAME, class_name).text
     print(movie_title)
@@ -61,7 +70,13 @@ def main():
     driver.implicitly_wait(3.0)
 
     start_game(driver)
-    
+
+    try:
+        WebDriverWait(driver, timeout=32).until(lambda success: success.find_element(By.CLASS_NAME, "battle-board"))
+    except:
+        print("Exception occurred finding the battle board.")
+        pass
+
     while not scan_site(driver):
         driver.implicitly_wait(1.0)
         pass

@@ -1,6 +1,6 @@
-[1721763760.519][INFO]: Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 56287
-[1721763760.519][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1721763761.012][INFO]: [7703ed4d145adda343e1873576673852] COMMAND InitSession {
+[1721828320.867][INFO]: Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 57117
+[1721828320.867][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1721828321.360][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND InitSession {
    "capabilities": {
       "alwaysMatch": {
          "browserName": "chrome",
@@ -17,7 +17,7 @@
       } ]
    }
 }
-[1721763761.013][INFO]: Populating Preferences file: {
+[1721828321.361][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -70,7 +70,7 @@
       "enabled": false
    }
 }
-[1721763761.014][INFO]: Populating Local State file: {
+[1721828321.362][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -80,22 +80,22 @@
       }
    }
 }
-[1721763761.015][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
-[1721763761.015][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
-[1721763761.016][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\KyleB\AppData\Local\Temp\scoped_dir22916_615949632" data:,
-[1721763761.541][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1721763761.545][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE InitSession {
+[1721828321.363][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1721828321.363][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1721828321.364][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\KyleB\AppData\Local\Temp\scoped_dir30832_2136427303" data:,
+[1721828321.886][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1721828321.889][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE InitSession {
    "capabilities": {
       "acceptInsecureCerts": false,
       "browserName": "chrome",
-      "browserVersion": "126.0.6478.128",
+      "browserVersion": "126.0.6478.183",
       "chrome": {
          "chromedriverVersion": "126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})",
-         "userDataDir": "C:\\Users\\KyleB\\AppData\\Local\\Temp\\scoped_dir22916_615949632"
+         "userDataDir": "C:\\Users\\KyleB\\AppData\\Local\\Temp\\scoped_dir30832_2136427303"
       },
       "fedcm:accounts": true,
       "goog:chromeOptions": {
-         "debuggerAddress": "localhost:56290"
+         "debuggerAddress": "localhost:57120"
       },
       "networkConnectionEnabled": false,
       "pageLoadStrategy": "normal",
@@ -116,90 +116,146 @@
       "webauthn:extension:prf": true,
       "webauthn:virtualAuthenticators": true
    },
-   "sessionId": "7703ed4d145adda343e1873576673852"
+   "sessionId": "a46fa9812bc1d92c1726953f3d43baba"
 }
-[1721763761.546][INFO]: [7703ed4d145adda343e1873576673852] COMMAND Navigate {
+[1721828321.890][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND Navigate {
    "url": "https://www.cinenerdle2.app/battle"
 }
-[1721763761.546][INFO]: Waiting for pending navigations...
-[1721763761.547][INFO]: Done waiting for pending navigations. Status: ok
-[1721763762.225][INFO]: Waiting for pending navigations...
-[1721763762.225][INFO]: Done waiting for pending navigations. Status: ok
-[1721763762.225][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE Navigate
-[1721763762.226][INFO]: [7703ed4d145adda343e1873576673852] COMMAND SetTimeouts {
+[1721828321.890][INFO]: Waiting for pending navigations...
+[1721828321.891][INFO]: Done waiting for pending navigations. Status: ok
+[1721828323.363][INFO]: Waiting for pending navigations...
+[1721828323.363][INFO]: Done waiting for pending navigations. Status: ok
+[1721828323.363][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE Navigate
+[1721828323.364][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND SetTimeouts {
    "implicit": 3000
 }
-[1721763762.226][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE SetTimeouts
-[1721763762.228][INFO]: [7703ed4d145adda343e1873576673852] COMMAND FindElement {
+[1721828323.364][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE SetTimeouts
+[1721828323.365][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
    "using": "css selector",
    "value": ".battle-home-button"
 }
-[1721763762.228][INFO]: Waiting for pending navigations...
-[1721763762.228][INFO]: Done waiting for pending navigations. Status: ok
-[1721763763.810][INFO]: Waiting for pending navigations...
-[1721763765.912][INFO]: Done waiting for pending navigations. Status: ok
-[1721763765.912][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "f.135C91EAC26FDC61D4B399C28E9CAE98.d.8FD6E8CD35FF0B15ACDF7C1840649D92.e.18"
+[1721828323.365][INFO]: Waiting for pending navigations...
+[1721828323.365][INFO]: Done waiting for pending navigations. Status: ok
+[1721828324.642][INFO]: Waiting for pending navigations...
+[1721828325.664][INFO]: Done waiting for pending navigations. Status: ok
+[1721828325.664][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.18"
 }
-[1721763765.913][INFO]: [7703ed4d145adda343e1873576673852] COMMAND ClickElement {
-   "id": "f.135C91EAC26FDC61D4B399C28E9CAE98.d.8FD6E8CD35FF0B15ACDF7C1840649D92.e.18"
+[1721828325.664][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND ClickElement {
+   "id": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.18"
 }
-[1721763765.913][INFO]: Waiting for pending navigations...
-[1721763765.913][INFO]: Done waiting for pending navigations. Status: ok
-[1721763765.949][INFO]: Waiting for pending navigations...
-[1721763765.950][INFO]: Done waiting for pending navigations. Status: ok
-[1721763765.950][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE ClickElement
-[1721763765.951][INFO]: [7703ed4d145adda343e1873576673852] COMMAND FindElement {
+[1721828325.665][INFO]: Waiting for pending navigations...
+[1721828325.665][INFO]: Done waiting for pending navigations. Status: ok
+[1721828325.696][INFO]: Waiting for pending navigations...
+[1721828325.699][INFO]: Done waiting for pending navigations. Status: ok
+[1721828325.699][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE ClickElement
+[1721828325.700][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
    "using": "css selector",
    "value": ".battle-choose-bans-button"
 }
-[1721763765.951][INFO]: Waiting for pending navigations...
-[1721763765.951][INFO]: Done waiting for pending navigations. Status: ok
-[1721763767.771][INFO]: Waiting for pending navigations...
-[1721763767.772][INFO]: Done waiting for pending navigations. Status: ok
-[1721763767.772][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "f.135C91EAC26FDC61D4B399C28E9CAE98.d.8FD6E8CD35FF0B15ACDF7C1840649D92.e.47"
+[1721828325.700][INFO]: Waiting for pending navigations...
+[1721828325.700][INFO]: Done waiting for pending navigations. Status: ok
+[1721828326.892][INFO]: Waiting for pending navigations...
+[1721828326.893][INFO]: Done waiting for pending navigations. Status: ok
+[1721828326.893][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.48"
 }
-[1721763767.772][INFO]: [7703ed4d145adda343e1873576673852] COMMAND FindElement {
+[1721828326.894][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
    "using": "css selector",
    "value": ".battle-choose-bans-button"
 }
-[1721763767.772][INFO]: Waiting for pending navigations...
-[1721763767.773][INFO]: Done waiting for pending navigations. Status: ok
-[1721763767.775][INFO]: Waiting for pending navigations...
-[1721763767.775][INFO]: Done waiting for pending navigations. Status: ok
-[1721763767.775][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "f.135C91EAC26FDC61D4B399C28E9CAE98.d.8FD6E8CD35FF0B15ACDF7C1840649D92.e.47"
+[1721828326.894][INFO]: Waiting for pending navigations...
+[1721828326.894][INFO]: Done waiting for pending navigations. Status: ok
+[1721828326.897][INFO]: Waiting for pending navigations...
+[1721828326.898][INFO]: Done waiting for pending navigations. Status: ok
+[1721828326.898][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.48"
 }
-[1721763767.776][INFO]: [7703ed4d145adda343e1873576673852] COMMAND ClickElement {
-   "id": "f.135C91EAC26FDC61D4B399C28E9CAE98.d.8FD6E8CD35FF0B15ACDF7C1840649D92.e.47"
+[1721828326.898][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND ClickElement {
+   "id": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.48"
 }
-[1721763767.776][INFO]: Waiting for pending navigations...
-[1721763767.776][INFO]: Done waiting for pending navigations. Status: ok
-[1721763767.791][INFO]: Waiting for pending navigations...
-[1721763767.791][INFO]: Done waiting for pending navigations. Status: ok
-[1721763767.791][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE ClickElement
-[1721763767.792][INFO]: [7703ed4d145adda343e1873576673852] COMMAND FindElement {
+[1721828326.898][INFO]: Waiting for pending navigations...
+[1721828326.899][INFO]: Done waiting for pending navigations. Status: ok
+[1721828326.917][INFO]: Waiting for pending navigations...
+[1721828326.917][INFO]: Done waiting for pending navigations. Status: ok
+[1721828326.917][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE ClickElement
+[1721828326.918][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-board"
+}
+[1721828326.918][INFO]: Waiting for pending navigations...
+[1721828326.919][INFO]: Done waiting for pending navigations. Status: ok
+[1721828329.905][INFO]: Waiting for pending navigations...
+[1721828329.907][INFO]: Done waiting for pending navigations. Status: ok
+[1721828329.907][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.58"
+}
+[1721828329.908][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND SetTimeouts {
+   "implicit": 3000
+}
+[1721828329.908][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE SetTimeouts
+[1721828329.908][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
    "using": "css selector",
    "value": ".battle-board-movie-number"
 }
-[1721763767.792][INFO]: Waiting for pending navigations...
-[1721763767.792][INFO]: Done waiting for pending navigations. Status: ok
-[1721763770.810][INFO]: Waiting for pending navigations...
-[1721763770.810][INFO]: Done waiting for pending navigations. Status: ok
-[1721763770.810][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-movie-number"}
-  (Session info: chrome=126.0.6478.128)
-[1721763771.314][INFO]: [7703ed4d145adda343e1873576673852] COMMAND FindElement {
+[1721828329.908][INFO]: Waiting for pending navigations...
+[1721828329.909][INFO]: Done waiting for pending navigations. Status: ok
+[1721828329.913][INFO]: Waiting for pending navigations...
+[1721828329.913][INFO]: Done waiting for pending navigations. Status: ok
+[1721828329.913][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.59"
+}
+[1721828329.914][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
    "using": "css selector",
    "value": ".battle-board-movie-number"
 }
-[1721763771.314][INFO]: Waiting for pending navigations...
-[1721763771.315][INFO]: Done waiting for pending navigations. Status: ok
-[1721763774.372][INFO]: Waiting for pending navigations...
-[1721763774.372][INFO]: Done waiting for pending navigations. Status: ok
-[1721763774.372][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-movie-number"}
-  (Session info: chrome=126.0.6478.128)
-[1721763774.893][INFO]: [7703ed4d145adda343e1873576673852] COMMAND QuitAll {
+[1721828329.914][INFO]: Waiting for pending navigations...
+[1721828329.914][INFO]: Done waiting for pending navigations. Status: ok
+[1721828329.916][INFO]: Waiting for pending navigations...
+[1721828329.918][INFO]: Done waiting for pending navigations. Status: ok
+[1721828329.919][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.59"
 }
-[1721763774.893][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE QuitAll
-[1721763774.893][WARNING]: Chrome quit unexpectedly, leaving behind temporary directoriesfor debugging:
+[1721828329.919][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND GetElementText {
+   "id": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.59"
+}
+[1721828329.919][INFO]: Waiting for pending navigations...
+[1721828329.920][INFO]: Done waiting for pending navigations. Status: ok
+[1721828329.926][INFO]: Waiting for pending navigations...
+[1721828329.926][INFO]: Done waiting for pending navigations. Status: ok
+[1721828329.926][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE GetElementText ""
+[1721828329.927][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-board-game-over"
+}
+[1721828329.927][INFO]: Waiting for pending navigations...
+[1721828329.927][INFO]: Done waiting for pending navigations. Status: ok
+[1721828333.463][INFO]: Waiting for pending navigations...
+[1721828333.464][INFO]: Done waiting for pending navigations. Status: ok
+[1721828333.464][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-game-over"}
+  (Session info: chrome=126.0.6478.183)
+[1721828333.965][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".opponents-turn"
+}
+[1721828333.965][INFO]: Waiting for pending navigations...
+[1721828333.967][INFO]: Done waiting for pending navigations. Status: ok
+[1721828336.990][INFO]: Waiting for pending navigations...
+[1721828336.991][INFO]: Done waiting for pending navigations. Status: ok
+[1721828336.991][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".opponents-turn"}
+  (Session info: chrome=126.0.6478.183)
+[1721828337.492][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-board-input"
+}
+[1721828337.492][INFO]: Waiting for pending navigations...
+[1721828337.492][INFO]: Done waiting for pending navigations. Status: ok
+[1721828337.497][INFO]: Waiting for pending navigations...
+[1721828337.498][INFO]: Done waiting for pending navigations. Status: ok
+[1721828337.498][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.65"
+}
+[1721828337.525][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND QuitAll {
+}
+[1721828337.525][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE QuitAll
+[1721828337.525][WARNING]: Chrome quit unexpectedly, leaving behind temporary directoriesfor debugging:
