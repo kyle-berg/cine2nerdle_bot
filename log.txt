@@ -1,0 +1,205 @@
+[1721763760.519][INFO]: Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 56287
+[1721763760.519][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1721763761.012][INFO]: [7703ed4d145adda343e1873576673852] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "browserVersion": null,
+         "goog:chromeOptions": {
+            "args": [  ],
+            "binary": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
+            "detach": true,
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1721763761.013][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1721763761.014][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1721763761.015][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1721763761.015][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1721763761.016][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\KyleB\AppData\Local\Temp\scoped_dir22916_615949632" data:,
+[1721763761.541][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1721763761.545][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "126.0.6478.128",
+      "chrome": {
+         "chromedriverVersion": "126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})",
+         "userDataDir": "C:\\Users\\KyleB\\AppData\\Local\\Temp\\scoped_dir22916_615949632"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:56290"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "7703ed4d145adda343e1873576673852"
+}
+[1721763761.546][INFO]: [7703ed4d145adda343e1873576673852] COMMAND Navigate {
+   "url": "https://www.cinenerdle2.app/battle"
+}
+[1721763761.546][INFO]: Waiting for pending navigations...
+[1721763761.547][INFO]: Done waiting for pending navigations. Status: ok
+[1721763762.225][INFO]: Waiting for pending navigations...
+[1721763762.225][INFO]: Done waiting for pending navigations. Status: ok
+[1721763762.225][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE Navigate
+[1721763762.226][INFO]: [7703ed4d145adda343e1873576673852] COMMAND SetTimeouts {
+   "implicit": 3000
+}
+[1721763762.226][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE SetTimeouts
+[1721763762.228][INFO]: [7703ed4d145adda343e1873576673852] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-home-button"
+}
+[1721763762.228][INFO]: Waiting for pending navigations...
+[1721763762.228][INFO]: Done waiting for pending navigations. Status: ok
+[1721763763.810][INFO]: Waiting for pending navigations...
+[1721763765.912][INFO]: Done waiting for pending navigations. Status: ok
+[1721763765.912][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.135C91EAC26FDC61D4B399C28E9CAE98.d.8FD6E8CD35FF0B15ACDF7C1840649D92.e.18"
+}
+[1721763765.913][INFO]: [7703ed4d145adda343e1873576673852] COMMAND ClickElement {
+   "id": "f.135C91EAC26FDC61D4B399C28E9CAE98.d.8FD6E8CD35FF0B15ACDF7C1840649D92.e.18"
+}
+[1721763765.913][INFO]: Waiting for pending navigations...
+[1721763765.913][INFO]: Done waiting for pending navigations. Status: ok
+[1721763765.949][INFO]: Waiting for pending navigations...
+[1721763765.950][INFO]: Done waiting for pending navigations. Status: ok
+[1721763765.950][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE ClickElement
+[1721763765.951][INFO]: [7703ed4d145adda343e1873576673852] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-choose-bans-button"
+}
+[1721763765.951][INFO]: Waiting for pending navigations...
+[1721763765.951][INFO]: Done waiting for pending navigations. Status: ok
+[1721763767.771][INFO]: Waiting for pending navigations...
+[1721763767.772][INFO]: Done waiting for pending navigations. Status: ok
+[1721763767.772][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.135C91EAC26FDC61D4B399C28E9CAE98.d.8FD6E8CD35FF0B15ACDF7C1840649D92.e.47"
+}
+[1721763767.772][INFO]: [7703ed4d145adda343e1873576673852] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-choose-bans-button"
+}
+[1721763767.772][INFO]: Waiting for pending navigations...
+[1721763767.773][INFO]: Done waiting for pending navigations. Status: ok
+[1721763767.775][INFO]: Waiting for pending navigations...
+[1721763767.775][INFO]: Done waiting for pending navigations. Status: ok
+[1721763767.775][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.135C91EAC26FDC61D4B399C28E9CAE98.d.8FD6E8CD35FF0B15ACDF7C1840649D92.e.47"
+}
+[1721763767.776][INFO]: [7703ed4d145adda343e1873576673852] COMMAND ClickElement {
+   "id": "f.135C91EAC26FDC61D4B399C28E9CAE98.d.8FD6E8CD35FF0B15ACDF7C1840649D92.e.47"
+}
+[1721763767.776][INFO]: Waiting for pending navigations...
+[1721763767.776][INFO]: Done waiting for pending navigations. Status: ok
+[1721763767.791][INFO]: Waiting for pending navigations...
+[1721763767.791][INFO]: Done waiting for pending navigations. Status: ok
+[1721763767.791][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE ClickElement
+[1721763767.792][INFO]: [7703ed4d145adda343e1873576673852] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-board-movie-number"
+}
+[1721763767.792][INFO]: Waiting for pending navigations...
+[1721763767.792][INFO]: Done waiting for pending navigations. Status: ok
+[1721763770.810][INFO]: Waiting for pending navigations...
+[1721763770.810][INFO]: Done waiting for pending navigations. Status: ok
+[1721763770.810][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-movie-number"}
+  (Session info: chrome=126.0.6478.128)
+[1721763771.314][INFO]: [7703ed4d145adda343e1873576673852] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-board-movie-number"
+}
+[1721763771.314][INFO]: Waiting for pending navigations...
+[1721763771.315][INFO]: Done waiting for pending navigations. Status: ok
+[1721763774.372][INFO]: Waiting for pending navigations...
+[1721763774.372][INFO]: Done waiting for pending navigations. Status: ok
+[1721763774.372][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-movie-number"}
+  (Session info: chrome=126.0.6478.128)
+[1721763774.893][INFO]: [7703ed4d145adda343e1873576673852] COMMAND QuitAll {
+}
+[1721763774.893][INFO]: [7703ed4d145adda343e1873576673852] RESPONSE QuitAll
+[1721763774.893][WARNING]: Chrome quit unexpectedly, leaving behind temporary directoriesfor debugging:
