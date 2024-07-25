@@ -1,6 +1,6 @@
-[1721828320.867][INFO]: Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 57117
-[1721828320.867][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1721828321.360][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND InitSession {
+[1721926350.685][INFO]: Starting ChromeDriver 126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776}) on port 65390
+[1721926350.685][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1721926351.176][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND InitSession {
    "capabilities": {
       "alwaysMatch": {
          "browserName": "chrome",
@@ -17,7 +17,7 @@
       } ]
    }
 }
-[1721828321.361][INFO]: Populating Preferences file: {
+[1721926351.176][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -70,7 +70,7 @@
       "enabled": false
    }
 }
-[1721828321.362][INFO]: Populating Local State file: {
+[1721926351.177][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -80,22 +80,22 @@
       }
    }
 }
-[1721828321.363][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
-[1721828321.363][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
-[1721828321.364][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\KyleB\AppData\Local\Temp\scoped_dir30832_2136427303" data:,
-[1721828321.886][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1721828321.889][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE InitSession {
+[1721926351.178][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1721926351.178][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1721926351.180][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\KyleB\AppData\Local\Temp\scoped_dir45124_153054161" data:,
+[1721926351.703][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1721926351.706][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE InitSession {
    "capabilities": {
       "acceptInsecureCerts": false,
       "browserName": "chrome",
       "browserVersion": "126.0.6478.183",
       "chrome": {
          "chromedriverVersion": "126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})",
-         "userDataDir": "C:\\Users\\KyleB\\AppData\\Local\\Temp\\scoped_dir30832_2136427303"
+         "userDataDir": "C:\\Users\\KyleB\\AppData\\Local\\Temp\\scoped_dir45124_153054161"
       },
       "fedcm:accounts": true,
       "goog:chromeOptions": {
-         "debuggerAddress": "localhost:57120"
+         "debuggerAddress": "localhost:65394"
       },
       "networkConnectionEnabled": false,
       "pageLoadStrategy": "normal",
@@ -116,146 +116,629 @@
       "webauthn:extension:prf": true,
       "webauthn:virtualAuthenticators": true
    },
-   "sessionId": "a46fa9812bc1d92c1726953f3d43baba"
+   "sessionId": "536c7d1e6a0125687afa3c238aeaf47a"
 }
-[1721828321.890][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND Navigate {
+[1721926351.708][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND Navigate {
    "url": "https://www.cinenerdle2.app/battle"
 }
-[1721828321.890][INFO]: Waiting for pending navigations...
-[1721828321.891][INFO]: Done waiting for pending navigations. Status: ok
-[1721828323.363][INFO]: Waiting for pending navigations...
-[1721828323.363][INFO]: Done waiting for pending navigations. Status: ok
-[1721828323.363][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE Navigate
-[1721828323.364][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND SetTimeouts {
+[1721926351.708][INFO]: Waiting for pending navigations...
+[1721926351.709][INFO]: Done waiting for pending navigations. Status: ok
+[1721926353.124][INFO]: Waiting for pending navigations...
+[1721926355.599][INFO]: Done waiting for pending navigations. Status: ok
+[1721926355.599][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE Navigate
+[1721926355.599][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND SetTimeouts {
    "implicit": 3000
 }
-[1721828323.364][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE SetTimeouts
-[1721828323.365][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
+[1721926355.599][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE SetTimeouts
+[1721926355.600][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
    "using": "css selector",
    "value": ".battle-home-button"
 }
-[1721828323.365][INFO]: Waiting for pending navigations...
-[1721828323.365][INFO]: Done waiting for pending navigations. Status: ok
-[1721828324.642][INFO]: Waiting for pending navigations...
-[1721828325.664][INFO]: Done waiting for pending navigations. Status: ok
-[1721828325.664][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.18"
+[1721926355.600][INFO]: Waiting for pending navigations...
+[1721926355.600][INFO]: Done waiting for pending navigations. Status: ok
+[1721926355.605][INFO]: Waiting for pending navigations...
+[1721926355.605][INFO]: Done waiting for pending navigations. Status: ok
+[1721926355.605][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.36"
 }
-[1721828325.664][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND ClickElement {
-   "id": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.18"
+[1721926355.606][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND ClickElement {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.36"
 }
-[1721828325.665][INFO]: Waiting for pending navigations...
-[1721828325.665][INFO]: Done waiting for pending navigations. Status: ok
-[1721828325.696][INFO]: Waiting for pending navigations...
-[1721828325.699][INFO]: Done waiting for pending navigations. Status: ok
-[1721828325.699][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE ClickElement
-[1721828325.700][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
+[1721926355.606][INFO]: Waiting for pending navigations...
+[1721926355.606][INFO]: Done waiting for pending navigations. Status: ok
+[1721926355.637][INFO]: Waiting for pending navigations...
+[1721926355.639][INFO]: Done waiting for pending navigations. Status: ok
+[1721926355.639][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE ClickElement
+[1721926355.640][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
    "using": "css selector",
    "value": ".battle-choose-bans-button"
 }
-[1721828325.700][INFO]: Waiting for pending navigations...
-[1721828325.700][INFO]: Done waiting for pending navigations. Status: ok
-[1721828326.892][INFO]: Waiting for pending navigations...
-[1721828326.893][INFO]: Done waiting for pending navigations. Status: ok
-[1721828326.893][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.48"
+[1721926355.640][INFO]: Waiting for pending navigations...
+[1721926355.640][INFO]: Done waiting for pending navigations. Status: ok
+[1721926356.895][INFO]: Waiting for pending navigations...
+[1721926356.898][INFO]: Done waiting for pending navigations. Status: ok
+[1721926356.898][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.48"
 }
-[1721828326.894][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
+[1721926356.899][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
    "using": "css selector",
    "value": ".battle-choose-bans-button"
 }
-[1721828326.894][INFO]: Waiting for pending navigations...
-[1721828326.894][INFO]: Done waiting for pending navigations. Status: ok
-[1721828326.897][INFO]: Waiting for pending navigations...
-[1721828326.898][INFO]: Done waiting for pending navigations. Status: ok
-[1721828326.898][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.48"
+[1721926356.899][INFO]: Waiting for pending navigations...
+[1721926356.899][INFO]: Done waiting for pending navigations. Status: ok
+[1721926356.904][INFO]: Waiting for pending navigations...
+[1721926356.905][INFO]: Done waiting for pending navigations. Status: ok
+[1721926356.905][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.48"
 }
-[1721828326.898][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND ClickElement {
-   "id": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.48"
+[1721926356.906][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND ClickElement {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.48"
 }
-[1721828326.898][INFO]: Waiting for pending navigations...
-[1721828326.899][INFO]: Done waiting for pending navigations. Status: ok
-[1721828326.917][INFO]: Waiting for pending navigations...
-[1721828326.917][INFO]: Done waiting for pending navigations. Status: ok
-[1721828326.917][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE ClickElement
-[1721828326.918][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
+[1721926356.906][INFO]: Waiting for pending navigations...
+[1721926356.906][INFO]: Done waiting for pending navigations. Status: ok
+[1721926356.926][INFO]: Waiting for pending navigations...
+[1721926356.926][INFO]: Done waiting for pending navigations. Status: ok
+[1721926356.926][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE ClickElement
+[1721926356.927][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
    "using": "css selector",
    "value": ".battle-board"
 }
-[1721828326.918][INFO]: Waiting for pending navigations...
-[1721828326.919][INFO]: Done waiting for pending navigations. Status: ok
-[1721828329.905][INFO]: Waiting for pending navigations...
-[1721828329.907][INFO]: Done waiting for pending navigations. Status: ok
-[1721828329.907][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.58"
+[1721926356.927][INFO]: Waiting for pending navigations...
+[1721926356.927][INFO]: Done waiting for pending navigations. Status: ok
+[1721926359.759][INFO]: Waiting for pending navigations...
+[1721926359.789][INFO]: Done waiting for pending navigations. Status: ok
+[1721926359.789][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.61"
 }
-[1721828329.908][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND SetTimeouts {
-   "implicit": 3000
-}
-[1721828329.908][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE SetTimeouts
-[1721828329.908][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
-   "using": "css selector",
-   "value": ".battle-board-movie-number"
-}
-[1721828329.908][INFO]: Waiting for pending navigations...
-[1721828329.909][INFO]: Done waiting for pending navigations. Status: ok
-[1721828329.913][INFO]: Waiting for pending navigations...
-[1721828329.913][INFO]: Done waiting for pending navigations. Status: ok
-[1721828329.913][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.59"
-}
-[1721828329.914][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
-   "using": "css selector",
-   "value": ".battle-board-movie-number"
-}
-[1721828329.914][INFO]: Waiting for pending navigations...
-[1721828329.914][INFO]: Done waiting for pending navigations. Status: ok
-[1721828329.916][INFO]: Waiting for pending navigations...
-[1721828329.918][INFO]: Done waiting for pending navigations. Status: ok
-[1721828329.919][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.59"
-}
-[1721828329.919][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND GetElementText {
-   "id": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.59"
-}
-[1721828329.919][INFO]: Waiting for pending navigations...
-[1721828329.920][INFO]: Done waiting for pending navigations. Status: ok
-[1721828329.926][INFO]: Waiting for pending navigations...
-[1721828329.926][INFO]: Done waiting for pending navigations. Status: ok
-[1721828329.926][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE GetElementText ""
-[1721828329.927][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
+[1721926359.790][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
    "using": "css selector",
    "value": ".battle-board-game-over"
 }
-[1721828329.927][INFO]: Waiting for pending navigations...
-[1721828329.927][INFO]: Done waiting for pending navigations. Status: ok
-[1721828333.463][INFO]: Waiting for pending navigations...
-[1721828333.464][INFO]: Done waiting for pending navigations. Status: ok
-[1721828333.464][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-game-over"}
+[1721926359.790][INFO]: Waiting for pending navigations...
+[1721926359.790][INFO]: Done waiting for pending navigations. Status: ok
+[1721926362.817][INFO]: Waiting for pending navigations...
+[1721926362.817][INFO]: Done waiting for pending navigations. Status: ok
+[1721926362.817][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-game-over"}
   (Session info: chrome=126.0.6478.183)
-[1721828333.965][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
+[1721926363.319][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
    "using": "css selector",
-   "value": ".opponents-turn"
+   "value": ".battle-input"
 }
-[1721828333.965][INFO]: Waiting for pending navigations...
-[1721828333.967][INFO]: Done waiting for pending navigations. Status: ok
-[1721828336.990][INFO]: Waiting for pending navigations...
-[1721828336.991][INFO]: Done waiting for pending navigations. Status: ok
-[1721828336.991][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".opponents-turn"}
+[1721926363.319][INFO]: Waiting for pending navigations...
+[1721926363.322][INFO]: Done waiting for pending navigations. Status: ok
+[1721926366.362][INFO]: Waiting for pending navigations...
+[1721926366.363][INFO]: Done waiting for pending navigations. Status: ok
+[1721926366.363][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-input"}
   (Session info: chrome=126.0.6478.183)
-[1721828337.492][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND FindElement {
+[1721926366.864][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
    "using": "css selector",
-   "value": ".battle-board-input"
+   "value": ".battle-board-game-over"
 }
-[1721828337.492][INFO]: Waiting for pending navigations...
-[1721828337.492][INFO]: Done waiting for pending navigations. Status: ok
-[1721828337.497][INFO]: Waiting for pending navigations...
-[1721828337.498][INFO]: Done waiting for pending navigations. Status: ok
-[1721828337.498][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "f.1896C9B57202024EC9CEDFDD5A7CAFB2.d.853E53758893A327F7FA2D0A28C66AC1.e.65"
+[1721926366.865][INFO]: Waiting for pending navigations...
+[1721926366.865][INFO]: Done waiting for pending navigations. Status: ok
+[1721926369.900][INFO]: Waiting for pending navigations...
+[1721926369.900][INFO]: Done waiting for pending navigations. Status: ok
+[1721926369.900][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-game-over"}
+  (Session info: chrome=126.0.6478.183)
+[1721926370.402][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
 }
-[1721828337.525][INFO]: [a46fa9812bc1d92c1726953f3d43baba] COMMAND QuitAll {
+[1721926370.402][INFO]: Waiting for pending navigations...
+[1721926370.402][INFO]: Done waiting for pending navigations. Status: ok
+[1721926373.444][INFO]: Waiting for pending navigations...
+[1721926373.444][INFO]: Done waiting for pending navigations. Status: ok
+[1721926373.444][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-input"}
+  (Session info: chrome=126.0.6478.183)
+[1721926373.945][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-board-game-over"
 }
-[1721828337.525][INFO]: [a46fa9812bc1d92c1726953f3d43baba] RESPONSE QuitAll
-[1721828337.525][WARNING]: Chrome quit unexpectedly, leaving behind temporary directoriesfor debugging:
+[1721926373.945][INFO]: Waiting for pending navigations...
+[1721926373.946][INFO]: Done waiting for pending navigations. Status: ok
+[1721926376.997][INFO]: Waiting for pending navigations...
+[1721926376.997][INFO]: Done waiting for pending navigations. Status: ok
+[1721926376.997][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-game-over"}
+  (Session info: chrome=126.0.6478.183)
+[1721926377.498][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926377.498][INFO]: Waiting for pending navigations...
+[1721926377.499][INFO]: Done waiting for pending navigations. Status: ok
+[1721926377.501][INFO]: Waiting for pending navigations...
+[1721926377.502][INFO]: Done waiting for pending navigations. Status: ok
+[1721926377.502][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.67"
+}
+[1721926378.503][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".battle-movie"
+}
+[1721926378.503][INFO]: Waiting for pending navigations...
+[1721926378.503][INFO]: Done waiting for pending navigations. Status: ok
+[1721926378.508][INFO]: Waiting for pending navigations...
+[1721926378.509][INFO]: Done waiting for pending navigations. Status: ok
+[1721926378.509][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+} ]
+[1721926378.509][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".battle-movie"
+}
+[1721926378.509][INFO]: Waiting for pending navigations...
+[1721926378.509][INFO]: Done waiting for pending navigations. Status: ok
+[1721926378.512][INFO]: Waiting for pending navigations...
+[1721926378.512][INFO]: Done waiting for pending navigations. Status: ok
+[1721926378.512][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+} ]
+[1721926378.512][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}
+[1721926378.512][INFO]: Waiting for pending navigations...
+[1721926378.512][INFO]: Done waiting for pending navigations. Status: ok
+[1721926378.521][INFO]: Waiting for pending navigations...
+[1721926378.522][INFO]: Done waiting for pending navigations. Status: ok
+[1721926378.522][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "0.0%\n🎬 2\nGrudge Match (2013)\nDirector: Peter Segal\nWriter: Tim Kelleher, Rodney Rothman\nCinematographer: Dean Semler\nComposer: Trevor Rabin\nTop Billed Cast: Robert De Niro, Sylvester Stallone, A..."
+[1721926378.523][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+}
+[1721926378.523][INFO]: Waiting for pending navigations...
+[1721926378.523][INFO]: Done waiting for pending navigations. Status: ok
+[1721926378.528][INFO]: Waiting for pending navigations...
+[1721926378.530][INFO]: Done waiting for pending navigations. Status: ok
+[1721926378.530][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "🎬 1\nExpend4bles (2023)\nDirector: Scott Waugh\nWriter: Kurt Wimmer, Max Adams, Tad Daggerhart\nCinematographer: Tim Maurice-Jones\nComposer: Guillaume Roussel\nTop Billed Cast: Sylvester Stallone, Ja..."
+[1721926382.963][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926382.963][INFO]: Waiting for pending navigations...
+[1721926382.963][INFO]: Done waiting for pending navigations. Status: ok
+[1721926382.966][INFO]: Waiting for pending navigations...
+[1721926382.966][INFO]: Done waiting for pending navigations. Status: ok
+[1721926382.966][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.67"
+}
+[1721926382.966][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926382.966][INFO]: Waiting for pending navigations...
+[1721926382.967][INFO]: Done waiting for pending navigations. Status: ok
+[1721926382.969][INFO]: Waiting for pending navigations...
+[1721926382.969][INFO]: Done waiting for pending navigations. Status: ok
+[1721926382.969][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.67"
+}
+[1721926382.969][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND IsElementEnabled {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.67"
+}
+[1721926382.969][INFO]: Waiting for pending navigations...
+[1721926382.969][INFO]: Done waiting for pending navigations. Status: ok
+[1721926382.972][INFO]: Waiting for pending navigations...
+[1721926382.973][INFO]: Done waiting for pending navigations. Status: ok
+[1721926382.973][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE IsElementEnabled true
+[1721926382.973][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND ClickElement {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.67"
+}
+[1721926382.973][INFO]: Waiting for pending navigations...
+[1721926382.973][INFO]: Done waiting for pending navigations. Status: ok
+[1721926382.995][INFO]: Waiting for pending navigations...
+[1721926382.996][INFO]: Done waiting for pending navigations. Status: ok
+[1721926382.996][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE ClickElement
+[1721926382.997][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND TypeElement {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.67",
+   "text": "Brazil 1985",
+   "value": [ "B", "r", "a", "z", "i", "l", " ", "1", "9", "8", "5" ]
+}
+[1721926382.997][INFO]: Waiting for pending navigations...
+[1721926382.997][INFO]: Done waiting for pending navigations. Status: ok
+[1721926383.019][INFO]: Waiting for pending navigations...
+[1721926383.038][INFO]: Done waiting for pending navigations. Status: ok
+[1721926383.038][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE TypeElement
+[1721926383.039][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND TypeElement {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.67",
+   "text": "",
+   "value": [ "" ]
+}
+[1721926383.039][INFO]: Waiting for pending navigations...
+[1721926383.040][INFO]: Done waiting for pending navigations. Status: ok
+[1721926383.055][INFO]: Waiting for pending navigations...
+[1721926383.056][INFO]: Done waiting for pending navigations. Status: ok
+[1721926383.056][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE TypeElement
+[1721926383.057][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-board-game-over"
+}
+[1721926383.057][INFO]: Waiting for pending navigations...
+[1721926383.057][INFO]: Done waiting for pending navigations. Status: ok
+[1721926386.095][INFO]: Waiting for pending navigations...
+[1721926386.095][INFO]: Done waiting for pending navigations. Status: ok
+[1721926386.095][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-game-over"}
+  (Session info: chrome=126.0.6478.183)
+[1721926386.596][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926386.597][INFO]: Waiting for pending navigations...
+[1721926386.597][INFO]: Done waiting for pending navigations. Status: ok
+[1721926386.599][INFO]: Waiting for pending navigations...
+[1721926386.599][INFO]: Done waiting for pending navigations. Status: ok
+[1721926386.599][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.67"
+}
+[1721926387.601][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".battle-movie"
+}
+[1721926387.601][INFO]: Waiting for pending navigations...
+[1721926387.601][INFO]: Done waiting for pending navigations. Status: ok
+[1721926387.604][INFO]: Waiting for pending navigations...
+[1721926387.604][INFO]: Done waiting for pending navigations. Status: ok
+[1721926387.604][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+} ]
+[1721926387.604][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".battle-movie"
+}
+[1721926387.604][INFO]: Waiting for pending navigations...
+[1721926387.605][INFO]: Done waiting for pending navigations. Status: ok
+[1721926387.606][INFO]: Waiting for pending navigations...
+[1721926387.607][INFO]: Done waiting for pending navigations. Status: ok
+[1721926387.607][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+} ]
+[1721926387.607][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}
+[1721926387.607][INFO]: Waiting for pending navigations...
+[1721926387.607][INFO]: Done waiting for pending navigations. Status: ok
+[1721926387.614][INFO]: Waiting for pending navigations...
+[1721926387.614][INFO]: Done waiting for pending navigations. Status: ok
+[1721926387.615][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "0.0%\n🎬 2\nGrudge Match (2013)\nDirector: Peter Segal\nWriter: Tim Kelleher, Rodney Rothman\nCinematographer: Dean Semler\nComposer: Trevor Rabin\nTop Billed Cast: Robert De Niro, Sylvester Stallone, A..."
+[1721926387.615][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+}
+[1721926387.615][INFO]: Waiting for pending navigations...
+[1721926387.616][INFO]: Done waiting for pending navigations. Status: ok
+[1721926387.620][INFO]: Waiting for pending navigations...
+[1721926387.622][INFO]: Done waiting for pending navigations. Status: ok
+[1721926387.622][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "🎬 1\nExpend4bles (2023)\nDirector: Scott Waugh\nWriter: Kurt Wimmer, Max Adams, Tad Daggerhart\nCinematographer: Tim Maurice-Jones\nComposer: Guillaume Roussel\nTop Billed Cast: Sylvester Stallone, Ja..."
+[1721926391.299][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926391.299][INFO]: Waiting for pending navigations...
+[1721926391.300][INFO]: Done waiting for pending navigations. Status: ok
+[1721926394.347][INFO]: Waiting for pending navigations...
+[1721926394.347][INFO]: Done waiting for pending navigations. Status: ok
+[1721926394.347][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-input"}
+  (Session info: chrome=126.0.6478.183)
+[1721926394.848][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-board-game-over"
+}
+[1721926394.848][INFO]: Waiting for pending navigations...
+[1721926394.848][INFO]: Done waiting for pending navigations. Status: ok
+[1721926397.881][INFO]: Waiting for pending navigations...
+[1721926397.881][INFO]: Done waiting for pending navigations. Status: ok
+[1721926397.881][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-game-over"}
+  (Session info: chrome=126.0.6478.183)
+[1721926398.382][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926398.382][INFO]: Waiting for pending navigations...
+[1721926398.383][INFO]: Done waiting for pending navigations. Status: ok
+[1721926399.500][INFO]: Waiting for pending navigations...
+[1721926399.500][INFO]: Done waiting for pending navigations. Status: ok
+[1721926399.500][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87"
+}
+[1721926400.502][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".battle-movie"
+}
+[1721926400.502][INFO]: Waiting for pending navigations...
+[1721926400.502][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.508][INFO]: Waiting for pending navigations...
+[1721926400.509][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.509][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.93"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.84"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+} ]
+[1721926400.510][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".battle-movie"
+}
+[1721926400.510][INFO]: Waiting for pending navigations...
+[1721926400.510][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.513][INFO]: Waiting for pending navigations...
+[1721926400.513][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.513][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.93"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.84"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+} ]
+[1721926400.513][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.93"
+}
+[1721926400.513][INFO]: Waiting for pending navigations...
+[1721926400.514][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.522][INFO]: Waiting for pending navigations...
+[1721926400.522][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.522][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "0.3%\n🎬 4\nCape Fear (1991)\nROBERT DE NIRO"
+[1721926400.523][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.84"
+}
+[1721926400.523][INFO]: Waiting for pending navigations...
+[1721926400.523][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.530][INFO]: Waiting for pending navigations...
+[1721926400.530][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.530][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "0.3%\n🎬 3\nBrazil (1985)\nROBERT DE NIRO"
+[1721926400.531][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}
+[1721926400.531][INFO]: Waiting for pending navigations...
+[1721926400.534][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.543][INFO]: Waiting for pending navigations...
+[1721926400.545][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.545][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "0.0%\n🎬 2\nGrudge Match (2013)\nDirector: Peter Segal\nWriter: Tim Kelleher, Rodney Rothman\nCinematographer: Dean Semler\nComposer: Trevor Rabin\nTop Billed Cast: Robert De Niro, Sylvester Stallone, A..."
+[1721926400.547][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+}
+[1721926400.547][INFO]: Waiting for pending navigations...
+[1721926400.547][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.554][INFO]: Waiting for pending navigations...
+[1721926400.554][INFO]: Done waiting for pending navigations. Status: ok
+[1721926400.554][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "🎬 1\nExpend4bles (2023)\nDirector: Scott Waugh\nWriter: Kurt Wimmer, Max Adams, Tad Daggerhart\nCinematographer: Tim Maurice-Jones\nComposer: Guillaume Roussel\nTop Billed Cast: Sylvester Stallone, Ja..."
+[1721926404.187][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926404.187][INFO]: Waiting for pending navigations...
+[1721926404.187][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.190][INFO]: Waiting for pending navigations...
+[1721926404.191][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.191][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87"
+}
+[1721926404.191][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926404.191][INFO]: Waiting for pending navigations...
+[1721926404.191][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.195][INFO]: Waiting for pending navigations...
+[1721926404.195][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.195][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87"
+}
+[1721926404.196][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND IsElementEnabled {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87"
+}
+[1721926404.196][INFO]: Waiting for pending navigations...
+[1721926404.196][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.200][INFO]: Waiting for pending navigations...
+[1721926404.200][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.200][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE IsElementEnabled true
+[1721926404.201][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND ClickElement {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87"
+}
+[1721926404.201][INFO]: Waiting for pending navigations...
+[1721926404.201][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.229][INFO]: Waiting for pending navigations...
+[1721926404.233][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.233][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE ClickElement
+[1721926404.233][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND TypeElement {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87",
+   "text": "The Untouchables 1987",
+   "value": [ "T", "h", "e", " ", "U", "n", "t", "o", "u", "c", "h", "a", "b", "l", "e", "s", " ", "1", "9", "8", "7" ]
+}
+[1721926404.233][INFO]: Waiting for pending navigations...
+[1721926404.234][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.271][INFO]: Waiting for pending navigations...
+[1721926404.307][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.307][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE TypeElement
+[1721926404.308][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND TypeElement {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87",
+   "text": "",
+   "value": [ "" ]
+}
+[1721926404.308][INFO]: Waiting for pending navigations...
+[1721926404.309][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.326][INFO]: Waiting for pending navigations...
+[1721926404.327][INFO]: Done waiting for pending navigations. Status: ok
+[1721926404.327][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE TypeElement
+[1721926404.327][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-board-game-over"
+}
+[1721926404.327][INFO]: Waiting for pending navigations...
+[1721926404.328][INFO]: Done waiting for pending navigations. Status: ok
+[1721926407.366][INFO]: Waiting for pending navigations...
+[1721926407.366][INFO]: Done waiting for pending navigations. Status: ok
+[1721926407.366][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-game-over"}
+  (Session info: chrome=126.0.6478.183)
+[1721926407.868][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926407.868][INFO]: Waiting for pending navigations...
+[1721926407.868][INFO]: Done waiting for pending navigations. Status: ok
+[1721926407.870][INFO]: Waiting for pending navigations...
+[1721926407.870][INFO]: Done waiting for pending navigations. Status: ok
+[1721926407.870][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87"
+}
+[1721926408.872][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".battle-movie"
+}
+[1721926408.872][INFO]: Waiting for pending navigations...
+[1721926408.872][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.875][INFO]: Waiting for pending navigations...
+[1721926408.876][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.876][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.93"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.84"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+} ]
+[1721926408.877][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".battle-movie"
+}
+[1721926408.877][INFO]: Waiting for pending navigations...
+[1721926408.877][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.880][INFO]: Waiting for pending navigations...
+[1721926408.880][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.880][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.93"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.84"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+} ]
+[1721926408.881][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.93"
+}
+[1721926408.881][INFO]: Waiting for pending navigations...
+[1721926408.881][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.886][INFO]: Waiting for pending navigations...
+[1721926408.886][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.886][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "0.3%\n🎬 4\nCape Fear (1991)\nROBERT DE NIRO"
+[1721926408.887][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.84"
+}
+[1721926408.887][INFO]: Waiting for pending navigations...
+[1721926408.887][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.892][INFO]: Waiting for pending navigations...
+[1721926408.892][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.892][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "0.3%\n🎬 3\nBrazil (1985)\nROBERT DE NIRO"
+[1721926408.893][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.72"
+}
+[1721926408.893][INFO]: Waiting for pending navigations...
+[1721926408.893][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.901][INFO]: Waiting for pending navigations...
+[1721926408.902][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.902][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "0.0%\n🎬 2\nGrudge Match (2013)\nDirector: Peter Segal\nWriter: Tim Kelleher, Rodney Rothman\nCinematographer: Dean Semler\nComposer: Trevor Rabin\nTop Billed Cast: Robert De Niro, Sylvester Stallone, A..."
+[1721926408.903][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND GetElementText {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.65"
+}
+[1721926408.903][INFO]: Waiting for pending navigations...
+[1721926408.903][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.909][INFO]: Waiting for pending navigations...
+[1721926408.909][INFO]: Done waiting for pending navigations. Status: ok
+[1721926408.909][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE GetElementText "🎬 1\nExpend4bles (2023)\nDirector: Scott Waugh\nWriter: Kurt Wimmer, Max Adams, Tad Daggerhart\nCinematographer: Tim Maurice-Jones\nComposer: Guillaume Roussel\nTop Billed Cast: Sylvester Stallone, Ja..."
+[1721926412.486][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926412.486][INFO]: Waiting for pending navigations...
+[1721926412.486][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.489][INFO]: Waiting for pending navigations...
+[1721926412.489][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.489][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87"
+}
+[1721926412.490][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926412.490][INFO]: Waiting for pending navigations...
+[1721926412.490][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.493][INFO]: Waiting for pending navigations...
+[1721926412.494][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.494][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87"
+}
+[1721926412.494][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND IsElementEnabled {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87"
+}
+[1721926412.494][INFO]: Waiting for pending navigations...
+[1721926412.495][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.497][INFO]: Waiting for pending navigations...
+[1721926412.498][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.498][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE IsElementEnabled true
+[1721926412.498][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND ClickElement {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87"
+}
+[1721926412.498][INFO]: Waiting for pending navigations...
+[1721926412.498][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.519][INFO]: Waiting for pending navigations...
+[1721926412.519][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.519][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE ClickElement
+[1721926412.520][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND TypeElement {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87",
+   "text": "The Untouchables 1987",
+   "value": [ "T", "h", "e", " ", "U", "n", "t", "o", "u", "c", "h", "a", "b", "l", "e", "s", " ", "1", "9", "8", "7" ]
+}
+[1721926412.520][INFO]: Waiting for pending navigations...
+[1721926412.521][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.555][INFO]: Waiting for pending navigations...
+[1721926412.590][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.590][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE TypeElement
+[1721926412.591][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND TypeElement {
+   "id": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87",
+   "text": "",
+   "value": [ "" ]
+}
+[1721926412.591][INFO]: Waiting for pending navigations...
+[1721926412.591][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.605][INFO]: Waiting for pending navigations...
+[1721926412.606][INFO]: Done waiting for pending navigations. Status: ok
+[1721926412.606][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE TypeElement
+[1721926412.606][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-board-game-over"
+}
+[1721926412.606][INFO]: Waiting for pending navigations...
+[1721926412.607][INFO]: Done waiting for pending navigations. Status: ok
+[1721926415.643][INFO]: Waiting for pending navigations...
+[1721926415.644][INFO]: Done waiting for pending navigations. Status: ok
+[1721926415.644][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".battle-board-game-over"}
+  (Session info: chrome=126.0.6478.183)
+[1721926416.145][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".battle-input"
+}
+[1721926416.145][INFO]: Waiting for pending navigations...
+[1721926416.145][INFO]: Done waiting for pending navigations. Status: ok
+[1721926416.148][INFO]: Waiting for pending navigations...
+[1721926416.148][INFO]: Done waiting for pending navigations. Status: ok
+[1721926416.148][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "f.3A03927A14EC1376748A5C399F61581D.d.1424300BB497EF93B28B70C4F160C68D.e.87"
+}
+[1721926417.149][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".battle-movie"
+}
+[1721926417.150][INFO]: [536c7d1e6a0125687afa3c238aeaf47a] RESPONSE FindElements ERROR no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.183)
