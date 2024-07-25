@@ -1,10 +1,10 @@
 # import tmdb3 as tmdb
-from telnetlib import EC
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.action_chains import ActionChains
 import re
 import pprint
 import api_funcs as api
@@ -22,20 +22,29 @@ def start_game(driver):
     start_button.click()
 
 def scan_site(driver):
-    # print("scanning...")
+    print("Scanning...")
     try:
-        WebDriverWait(driver, timeout=1).until(lambda success: success.find_element(By.CLASS_NAME, "battle-board-game-over"))
+        WebDriverWait(driver, timeout=3).until(lambda success: success.find_element(By.CLASS_NAME, "battle-input"))
     except:
-        try:
-            WebDriverWait(driver, timeout=1).until(lambda success: success.find_element(By.CLASS_NAME, "battle-input"))
-        except:
-            return 1
-        else:
-            return 0
+        # print("Exception determining if it's our turn")
+        pass
     else:
-        return 2
+        if driver.find_element(By.CLASS_NAME, "battle-input").is_displayed():
+            return 0
+        
+    try:
+        WebDriverWait(driver, timeout=3).until(lambda success: success.find_element(By.CLASS_NAME, "opponents-turn"))
+    except:
+        # print("Exception determining if it's their turn")
+        pass
+    else:
+        if driver.find_element(By.CLASS_NAME, "opponents-turn").is_displayed():
+            return 1
+        
+    
 
 def update_movies(driver, played_movies):
+    print("Updating movies...")
     try:
         WebDriverWait(driver, timeout=5).until(lambda success: success.find_elements(By.CLASS_NAME, "battle-movie"))
     except:
@@ -45,18 +54,18 @@ def update_movies(driver, played_movies):
         movie_element_list = driver.find_elements(By.CLASS_NAME, "battle-movie")
         for movie in movie_element_list:
             movie_str = movie.text
-            print(movie_str)
-            match = re.search(pattern=r"\d\n(.+?\))", string=movie_str, flags=re.MULTILINE)
-            if match:
-                movie_title = match.group(1)
-                match = re.search(r"(.+?)\((\d{4})\)", movie_title)
-                if not any(d['title'] == match.group(1).rstrip() for d in played_movies):
-                    movie = {'title': match.group(1).rstrip(), 'year': match.group(2)}
-                    played_movies.append(movie)
-            else:
-                update_movies(driver, played_movies)
+            # print(movie_str)
+            matches = re.findall(pattern=r"\d\n(.+?\))", string=movie_str, flags=re.MULTILINE)
+            for match in matches:
+                # movie_title = match.group(1)
+                match2 = re.search(r"(.+?)\((\d{4})\)", match)
+                if not any(d['title'] == match2.group(1).rstrip() for d in played_movies):
+                    movie = {'title': match2.group(1).rstrip(), 'year': match2.group(2)}
+                    print(len(played_movies))
+                    played_movies.insert(len(played_movies), movie)
 
 def play_movie(driver, played_movies):
+    print("Played movies: " + str(played_movies))
     curr_movie = played_movies[-1]
     print("Current movie: " + str(curr_movie["title"]) + " " + str(curr_movie["year"]))
 
@@ -79,18 +88,28 @@ def play_movie(driver, played_movies):
         if text_box.is_enabled():
             text_box.click()
             text_box.send_keys(str(movie[0]['title'] + " " + movie[0]['year']))
-            text_box.send_keys(Keys.ENTER)
+            # text_box.send_keys(Keys.ENTER)
+            try:
+                WebDriverWait(driver, timeout=3).until(lambda success: success.find_element(By.CLASS_NAME, "battle-suggestion"))
+            except:
+                print("error finding the movie")
+                pass
+            else:
+                selection = driver.find_element(By.CLASS_NAME, "battle-suggestion")
+                selection.click()
+            
 
 def main():
     service = webdriver.ChromeService(log_output='log.txt')
 
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
+    options.add_extension('CJPALHDLNBPAFIAMEJDNHCPHJBKEIAGM_1_58_0_0.crx')
 
     driver = webdriver.Chrome(service=service, options=options)
 
     driver.get("https://www.cinenerdle2.app/battle")
-    driver.implicitly_wait(3.0)
+    time.sleep(3.0)
 
     start_game(driver)
 
@@ -102,16 +121,19 @@ def main():
 
     played_movies = []
     while True:
-        update_movies(driver, played_movies)
         game_status = scan_site(driver)
-        print("Played movies: " + str(played_movies))
         if game_status == 0: # My turn
             print("Your turn!")
+            time.sleep(2.0)
+            update_movies(driver, played_movies)
             play_movie(driver, played_movies)
+            WebDriverWait(driver, timeout=3).until(lambda success: success.find_element(By.CLASS_NAME, "opponents-turn"))
         elif game_status == 1: # Their turn
             print("Their turn!")
+            update_movies(driver, played_movies)
         else:
             print("Game Over!")
+            break
         
 
 if __name__ == "__main__":
