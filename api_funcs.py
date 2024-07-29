@@ -1,7 +1,8 @@
 import tmdbsimple as tmdb
 import pprint
+import pandas as pd
 
-tmdb.API_KEY = 'fe50c0b66d13f4e597422d3bec8c398b'
+tmdb.API_KEY = ''
 
 
 def get_movie_info(movie_name, year=None):

@@ -21,6 +21,7 @@ def start_game(driver):
     start_button = driver.find_element(By.CLASS_NAME, "battle-choose-bans-button")
     start_button.click()
 
+
 def scan_site(driver):
     print("Scanning...")
     try:
@@ -41,9 +42,18 @@ def scan_site(driver):
         if driver.find_element(By.CLASS_NAME, "opponents-turn").is_displayed():
             return 1
         
+    try:
+        WebDriverWait(driver, timeout=3).until(lambda success: success.find_element(By.CLASS_NAME, "game-over-header"))
+    except:
+        # print("Exception determining if it's their turn")
+        pass
+    else:
+        if driver.find_element(By.CLASS_NAME, "game-over-header").is_displayed():
+            return 2
+        
     
 
-def update_movies(driver, played_movies):
+def update_movies(driver, played_movies, links):
     print("Updating movies...")
     try:
         WebDriverWait(driver, timeout=5).until(lambda success: success.find_elements(By.CLASS_NAME, "battle-movie"))
@@ -63,8 +73,11 @@ def update_movies(driver, played_movies):
                     movie = {'title': match2.group(1).rstrip(), 'year': match2.group(2)}
                     print(len(played_movies))
                     played_movies.insert(len(played_movies), movie)
+                    if len(played_movies) >= 2:
+                        for link in api.gen_links(movie, played_movies[-2]): links.append(link)
 
-def play_movie(driver, played_movies):
+
+def play_movie(driver, played_movies, links):
     print("Played movies: " + str(played_movies))
     curr_movie = played_movies[-1]
     print("Current movie: " + str(curr_movie["title"]) + " " + str(curr_movie["year"]))
@@ -72,11 +85,9 @@ def play_movie(driver, played_movies):
     if len(played_movies) > 1:
         prev_movie = played_movies[-2]
         print("Previous movie: " + str(prev_movie["title"]) + " " + str(prev_movie["year"]))
-        links = api.gen_links(curr_movie, prev_movie)
-    else:
-        links = []
 
     movie = api.pick_movie(curr_movie=curr_movie, used_links=links, used_movies=played_movies)
+    for link in api.gen_links(movie[0], curr_movie): links.append(link)
 
     try:
         WebDriverWait(driver, timeout=2).until(lambda success: success.find_element(By.CLASS_NAME, "battle-input"))
@@ -93,6 +104,8 @@ def play_movie(driver, played_movies):
                 WebDriverWait(driver, timeout=3).until(lambda success: success.find_element(By.CLASS_NAME, "battle-suggestion"))
             except:
                 print("error finding the movie")
+                played_movies.insert(0, movie)
+                play_movie(driver, played_movies, links)
                 pass
             else:
                 selection = driver.find_element(By.CLASS_NAME, "battle-suggestion")
@@ -120,18 +133,21 @@ def main():
         pass
 
     played_movies = []
+    links = []
     while True:
         game_status = scan_site(driver)
         if game_status == 0: # My turn
             print("Your turn!")
             time.sleep(2.0)
-            update_movies(driver, played_movies)
-            play_movie(driver, played_movies)
+            update_movies(driver, played_movies, links)
+            play_movie(driver, played_movies, links)
+            print("Used Links: " + str(links))
             WebDriverWait(driver, timeout=3).until(lambda success: success.find_element(By.CLASS_NAME, "opponents-turn"))
         elif game_status == 1: # Their turn
             print("Their turn!")
-            update_movies(driver, played_movies)
-        else:
+            update_movies(driver, played_movies, links)
+            print("Used Links: " + str(links))
+        elif game_status == 2:
             print("Game Over!")
             break
         
